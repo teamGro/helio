@@ -74,7 +74,7 @@
     background-color: #dfc053;
 }
 
-.managers__person-header_active {
+.managers__person_active .managers__person-header {
     display         : flex;
     background-color: #4a894e;
 }
@@ -178,7 +178,6 @@
         order      : 2;
         margin-left: 100px;
     }
-
 }
 
 @media(min-width: 1200px) {
@@ -223,6 +222,10 @@
 
     .managers__position-item:not(:last-child) {
         margin-right: 20px;
+    }
+
+    .managers__person-header:hover {
+        cursor: pointer;
     }
 
     .managers__duties {
