@@ -1,0 +1,262 @@
+.managers {
+    padding-top   : 50px;
+    padding-bottom: 50px;
+}
+
+.managers__title {
+    margin-bottom: 30px;
+
+    font-weight   : bold;
+    line-height   : 120%;
+    font-size     : 24px;
+    text-transform: uppercase;
+}
+
+.managers__position-list {
+    display      : flex;
+    width        : 100%;
+    margin-bottom: 20px;
+    overflow-x   : auto;
+    margin-left  : 15px;
+}
+
+.managers__position-item {
+    position: relative;
+
+    min-width                : 200px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius  : 20px;
+    padding                  : 14px 0;
+
+    font-weight: bold;
+    font-size  : 18px;
+    line-height: 120%;
+    color      : #FFFFFF;
+    text-align : center;
+
+    background-color: #dfc053;
+}
+
+.managers__position-item:not(:last-child) {
+    margin-right: 20px;
+}
+
+.managers__position-item_active {
+    background-color: #4a894e;
+    transition      : background-color .3s linear;
+}
+
+.managers__position-item:hover {
+    cursor: pointer;
+}
+
+.managers__details-box {
+    display       : flex;
+    flex-direction: column;
+}
+
+.managers__person {
+    display       : flex;
+    flex-direction: column;
+}
+
+.managers__person:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.managers__person-header {
+    display                  : flex;
+    padding                  : 19px 38px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius  : 20px;
+    margin-bottom            : 20px;
+
+    background-color: #dfc053;
+}
+
+.managers__person-header_active {
+    display         : flex;
+    background-color: #4a894e;
+}
+
+.managers__duties {
+    margin-right: auto;
+
+    font-weight: bold;
+    font-size  : 24px;
+    line-height: 120%;
+    color      : #FFFFFF;
+}
+
+.managers__more {
+    min-width: 20px;
+}
+
+.managers__person_active .managers__more {
+    transform: rotate(90deg);
+}
+
+.managers__details {
+    display: none;
+}
+
+.managers__person_active .managers__details {
+    display: block;
+}
+
+.managers__img-box {
+    display       : flex;
+    flex-direction: column;
+    align-items   : center;
+    margin-bottom : 20px;
+}
+
+.managers__photo {
+    margin-bottom: 20px;
+    max-width    : 230px;
+}
+
+.managers__desc {
+    font-weight: 500;
+    font-size  : 14px;
+    line-height: 120%;
+    text-align : center;
+}
+
+.managers__name {
+    margin-bottom: 20px;
+
+    font-weight: bold;
+    font-size  : 18px;
+    line-height: 120%;
+}
+
+.managers__text {
+    font-weight: 500;
+    font-size  : 16px;
+    line-height: 120%;
+}
+
+.managers__text:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+
+
+@media(min-width: 768px) {
+    .managers {
+        padding-top   : 75px;
+        padding-bottom: 75px;
+    }
+
+    .managers__title {
+        font-size: 30px;
+    }
+
+    .managers__position-list {
+        margin-left  : 30px;
+        margin-bottom: 40px;
+    }
+
+    .managers__position-item {
+        min-width: 265px;
+    }
+
+    .managers__duties {
+        font-size: 30px;
+    }
+
+    .managers__box {
+        display      : flex;
+        margin-top   : 40px;
+        margin-bottom: 40px;
+        padding-right: 50px;
+        padding-left : 50px;
+    }
+
+    .managers__img-box {
+        order      : 2;
+        margin-left: 100px;
+    }
+
+}
+
+@media(min-width: 1200px) {
+    .managers {
+        padding-top   : 160px;
+        padding-bottom: 160px;
+    }
+
+    .managers__title {
+        margin-bottom: 37px;
+        font-size    : 35px;
+    }
+
+    .managers__position-list {
+        margin-left  : auto;
+        margin-right : auto;
+        margin-bottom: 40px;
+        max-width    : 1290px;
+        padding-left : 50px;
+        padding-right: 50px;
+    }
+
+    .managers__position-item {
+        min-width     : 276px;
+        font-size     : 22px;
+        padding-left  : 15px;
+        padding-right : 15px;
+        letter-spacing: -1px;
+    }
+
+    .managers__position-item:nth-child(4) {
+        min-width: 250px;
+    }
+
+    .managers__position-item:nth-child(4) {
+        min-width: 160px;
+    }
+
+    .managers__position-item:nth-child(5) {
+        min-width: 184px;
+    }
+
+    .managers__position-item:not(:last-child) {
+        margin-right: 20px;
+    }
+
+    .managers__duties {
+        font-size: 35px;
+    }
+
+    .managers__person-header {
+        border-bottom-left-radius: 35px;
+        border-top-right-radius  : 35px;
+    }
+
+    .managers__img-box {
+        margin-bottom: 0;
+    }
+
+    .managers__photo {
+        margin-bottom: 37px;
+        max-width    : 283px;
+    }
+
+    .managers__desc {
+        font-size: 16px;
+    }
+
+    .managers__name {
+        margin-bottom: 30px;
+        font-size    : 22px;
+    }
+
+    .managers__text {
+        font-size: 18px;
+    }
+
+    .managers__text:not(:last-child) {
+        margin-bottom: 29px;
+    }
+}
