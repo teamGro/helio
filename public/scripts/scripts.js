@@ -1,10 +1,11 @@
 window.accordionHandler();
 
-window.customData.manageCompany.forEach((el) => {});
-
 const tabsContainer = $('#managersTabs');
 const managersContainer = $('#managersData');
-managersContainer.fadeIn();
+window.customData.motherCompany.forEach((el) => {
+  managersContainer.append(el.getAllMarkup());
+  managersContainer.fadeIn('slow');
+});
 
 tabsContainer.on('click', function (e) {
   let $target = $(e.target);
