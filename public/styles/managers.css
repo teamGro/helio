@@ -27,6 +27,9 @@
   border-bottom-left-radius: 20px;
   border-top-right-radius: 20px;
   padding: 14px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   font-weight: bold;
   font-size: 18px;
