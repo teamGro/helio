@@ -6,6 +6,7 @@
       let $target = $(e.target);
 
       if (!$target.closest('.managers__person')) return;
+      if ($target.closest('.managers__details').length) return;
 
       let activePerson = $('.managers__person_active');
 
