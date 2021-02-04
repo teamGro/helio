@@ -1,6 +1,6 @@
 html {
-  width     : 100%;
-  max-width : 100%;
+  width: 100%;
+  max-width: 100%;
   overflow-x: hidden;
 }
 
@@ -13,10 +13,10 @@ html {
 body {
   position: relative;
 
-  margin    : 0;
-  padding   : 0;
-  width     : 100%;
-  max-width : 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
   overflow-x: hidden;
 
   background-color: #fff;
@@ -29,20 +29,20 @@ body {
 
 img {
   max-width: 100%;
-  height   : auto;
+  height: auto;
 }
 
 a {
   text-decoration: none;
-  color          : inherit;
-  font           : inherit;
-  cursor         : pointer;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
 }
 
 ul {
   list-style: none;
-  padding   : 0;
-  margin    : 0;
+  padding: 0;
+  margin: 0;
 }
 
 h1,
@@ -50,20 +50,20 @@ h2,
 h3,
 p {
   padding: 0;
-  margin : 0;
+  margin: 0;
 
   font: inherit;
 }
 
 button {
-  border : none;
-  margin : 0;
+  border: none;
+  margin: 0;
   padding: 0;
 
   font: inherit;
 
   background-color: transparent;
-  cursor          : pointer;
+  cursor: pointer;
 }
 
 button:focus,
@@ -73,20 +73,20 @@ button:active {
 
 .visually-hidden {
   position: absolute !important;
-  clip    : rect(1px 1px 1px 1px);
-  clip    : rect(1px, 1px, 1px, 1px);
-  border  : 0 !important;
-  height  : 1px !important;
-  width   : 1px !important;
-  padding : 0 !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  padding: 0 !important;
   overflow: hidden;
 }
 
 .custom-container {
-  width    : 100%;
+  width: 100%;
   max-width: 1290px;
-  padding  : 0 15px;
-  margin   : 0 auto;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 @media (min-width: 768px) {
@@ -95,10 +95,11 @@ button:active {
   }
 }
 
-@media(min-width: 1024px) {}
+@media (min-width: 1024px) {
+}
 
-@media (min-width: 1390px) {
+@media (min-width: 1290px) {
   .custom-container {
-    padding: 0 50px;
+    padding: 0;
   }
 }

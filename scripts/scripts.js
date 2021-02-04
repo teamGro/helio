@@ -1,20 +1,39 @@
-const managersContainer = $('.managers__details-box');
+window.accordionHandler();
 
-managersContainer.on('click', function (e) {
-    let target = $(e.target);
+window.customData.manageCompany.forEach((el) => {});
 
-    if (!target.closest('.managers__person')) return;
+const tabsContainer = $('#managersTabs');
+const managersContainer = $('#managersData');
+managersContainer.fadeIn();
 
-    let activeElem = $(this).find('.managers__person_active');
-    let activeDetails = activeElem.find('.managers__details');
-    activeDetails.slideUp();
+tabsContainer.on('click', function (e) {
+  let $target = $(e.target);
+  if ($target.prop('tagName') != 'LI') return;
 
-    let newActiveElem = target.closest('.managers__person');
-    newActiveElem.addClass('managers__person_active');
-    newActiveElem.find('.managers__details').slideDown();
+  $(this).find('.managers__position-item_active').removeClass('managers__position-item_active');
+  $target.addClass('managers__position-item_active');
 
-    setTimeout(() => {
-        activeElem.removeClass('managers__person_active');
-    }, 300)
-})
+  let tabID = $target.attr('id');
+  let activeTabData = window.customData[tabID];
 
+  managersContainer.fadeOut('slow');
+  // .animate(
+  //   {
+  //     opacity: 0,
+  //   },
+  //   15000,
+  //   'linear',
+  //   function () {
+  //     $(this).empty();
+  //   }
+  // );
+
+  setTimeout(() => {
+    managersContainer.empty();
+    activeTabData.forEach((el) => {
+      managersContainer.append(el.getAllMarkup());
+      managersContainer.fadeIn('slow');
+    });
+    //managersContainer.find('.managers__person-header_open').trigger('click').trigger('click');
+  }, 500);
+});
