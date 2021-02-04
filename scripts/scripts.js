@@ -16,17 +16,7 @@ tabsContainer.on('click', function (e) {
   let tabID = $target.attr('id');
   let activeTabData = window.customData[tabID];
 
-  managersContainer.fadeOut('slow');
-  // .animate(
-  //   {
-  //     opacity: 0,
-  //   },
-  //   15000,
-  //   'linear',
-  //   function () {
-  //     $(this).empty();
-  //   }
-  // );
+  managersContainer.fadeOut(300);
 
   setTimeout(() => {
     managersContainer.empty();
@@ -34,6 +24,5 @@ tabsContainer.on('click', function (e) {
       managersContainer.append(el.getAllMarkup());
       managersContainer.fadeIn('slow');
     });
-    //managersContainer.find('.managers__person-header_open').trigger('click').trigger('click');
-  }, 500);
+  }, 300);
 });
