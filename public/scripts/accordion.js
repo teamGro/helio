@@ -13,7 +13,7 @@
       let $parent = $target.parent();
 
       if (activePerson.length && activePerson.attr('data-num') == $parent.attr('data-num')) {
-        activePerson.find('.managers__details').slideUp('slow');
+        activePerson.find('.managers__details').slideUp('200');
 
         setTimeout(() => {
           $target.removeClass('managers__person-header_open');
@@ -24,7 +24,7 @@
       }
 
       if (activePerson.length) {
-        activePerson.find('.managers__details').slideUp('slow');
+        activePerson.find('.managers__details').slideUp('200');
         setTimeout(() => {
           activePerson.find('.managers__person-header_open').removeClass('managers__person-header_open');
           activePerson.removeClass('managers__person_active');
@@ -33,7 +33,7 @@
 
       setTimeout(() => {
         $target.addClass('managers__person-header_open');
-        $parent.find('.managers__details').slideDown('');
+        $parent.find('.managers__details').slideDown('200');
         $parent.addClass('managers__person_active');
       }, 300);
     });
