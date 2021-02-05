@@ -36,7 +36,9 @@
         $target.addClass('managers__person-header_open');
         $parent.find('.managers__details').slideDown('200');
         $parent.addClass('managers__person_active');
-        $(window).scrollTop($target.offset().top);
+        if ($(window).width() < 1290) {
+          $(window).scrollTop($target.offset().top);
+        }
       }, 300);
     });
   };
