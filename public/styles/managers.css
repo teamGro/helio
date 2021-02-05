@@ -108,6 +108,8 @@
 
 .managers__details {
   display: none;
+  padding-right: 38px;
+  padding-left: 38px;
 }
 
 .managers__person_active .managers__details {
@@ -176,15 +178,19 @@
 
   .managers__box {
     display: flex;
+    justify-content: space-between;
     margin-top: 40px;
     margin-bottom: 40px;
-    padding-right: 50px;
-    padding-left: 50px;
   }
 
   .managers__img-box {
     order: 2;
     margin-left: 100px;
+    max-width: 380px;
+  }
+
+  .managers__text {
+    max-width: 770px;
   }
 }
 
